@@ -100,5 +100,9 @@ go build -o ./build/mandel ./main.go && ./build/mandel \
     --workers 8 \
     --iter 1000
 ```
-![mandelbrot](./img/mandelbrot.png)
+`1x`
+![mandelbrot 1x](./img/mandelbrot.png)
+
+`10x`
+![mandelbrot 10x](./img/mandelbrotx10.png)
 
