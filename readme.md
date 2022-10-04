@@ -108,13 +108,6 @@ go build -o ./build/mandel ./main.go && ./build/mandel \
 - Time taken to save image: 80.7434ms
 ![mandelbrot 1x](./img/mandelbrot.png)
 
-`10x`
-- `png`
-- `20 MegaBytes`
-- Using mode: pixel (one goroutine per pixel)
-- Time taken to create image: 14.8648101s
-- Time taken to save image: 9.5717677s
-![mandelbrot 10x](./img/mandelbrotx10.png)
 
 `10x`
 - `jpg`
