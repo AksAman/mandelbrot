@@ -72,22 +72,32 @@ for each pixel do
 ### Usage
 ```bash
 Flags: 
-  -width int
-        Width of the image (default 700)
   -height int
-        Height of the image (default 400)
-  -scale int
-        Scale of the image
+        Height of the image (default 700)
+  -hue float
+        Hue offset of the image
   -iter int
         Max Iterations (default 1000)
   -mode string
-        Mode of the image (default "seq") (options: seq, pixel, row, workers)
+        Mode of the image (options: seq, pixel, row, workers) (default "seq")
+  -offsetX float
+        Offset X of the image
+  -offsetY float
+        Offset Y of the image
   -out string
         Name of the output file with extension (default "mandelbrot.png")
+  -quality int
+        JPG Quality (default 100)
+  -scale int
+        Scale of the image (default 1)
   -threshold float
         Threshold for the mandelbrot set (default 4)
+  -width int
+        Width of the image (default 700)
   -workers int
         Number of workers to use (default 4)
+  -zoom float
+        Zoom of the image (default 1)
 ```
 
 ### Examples
@@ -107,6 +117,19 @@ go build -o ./build/mandel ./main.go && ./build/mandel \
 - Time taken to create image: 144.6938ms
 - Time taken to save image: 80.7434ms
 ![mandelbrot 1x](./img/mandelbrot.png)
+
+`1x`
+- `jpg`
+- iterations=1000
+- threshold=1000
+- zoom=1000
+- hueOffset=200
+- offsetX=0.7435
+- offsetY=-0.1315
+- Using mode: pixel (one goroutine per pixel)
+- Time taken to create image: 144.6938ms
+- Time taken to save image: 80.7434ms
+![fav 1x](./img/fav.jpg)
 
 
 `10x`
