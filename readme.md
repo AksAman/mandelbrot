@@ -71,21 +71,21 @@ for each pixel do
 
 ### Usage
 ```bash
-go run main.go --help
+Flags: 
+  -width int
+        Width of the image (default 700)
   -height int
         Height of the image (default 400)
+  -scale int
+        Scale of the image
   -iter int
         Max Iterations (default 1000)
   -mode string
         Mode of the image (default "seq") (options: seq, pixel, row, workers)
   -out string
         Name of the output file with extension (default "mandelbrot.png")
-  -scale int
-        Scale of the image
   -threshold float
         Threshold for the mandelbrot set (default 4)
-  -width int
-        Width of the image (default 700)
   -workers int
         Number of workers to use (default 4)
 ```
