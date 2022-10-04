@@ -6,7 +6,7 @@ type SetScale struct {
 }
 
 var DefaultXScale = SetScale{
-	min: -2.5,
+	min: -1,
 	max: 1,
 }
 
@@ -33,17 +33,28 @@ type Config struct {
 	Workers       int
 	Scale         int
 	Mode          Mode
+	Zoom          float64
+	Smooth        bool
+	OffsetX       float64
+	OffsetY       float64
+	HueOffset     float64
 }
 
 var DefaultConfig = Config{
 	Width:         700,
-	Height:        400,
+	Height:        700,
 	Threshold:     4.0,
 	MaxIterations: 1000,
 	Workers:       4,
 	XScale:        &DefaultXScale,
 	YScale:        &DefaultYScale,
 	Mode:          Sequential,
+	Scale:         1,
+	Zoom:          1,
+	Smooth:        false,
+	OffsetX:       0,
+	OffsetY:       0,
+	HueOffset:     0,
 }
 
 func configDefault(config ...Config) Config {
@@ -89,6 +100,10 @@ func configDefault(config ...Config) Config {
 
 	if cfg.Scale == 0 {
 		cfg.Scale = 1
+	}
+
+	if cfg.Zoom == 0 {
+		cfg.Zoom = 1
 	}
 
 	cfg.Width *= cfg.Scale

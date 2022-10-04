@@ -124,3 +124,26 @@ go build -o ./build/mandel ./main.go && ./build/mandel \
 - Time taken to save image: 2.0148509s
 ![mandelbrot 10x](./img/mandelbrotx10.jpg)
 
+
+
+### Gallery
+![mandelbrotx10](./img/mandelbrotx10.jpg)
+![web-colored#i=120_t=1000_z=1e+06_x=0.243_y=0.8115](./img/web-colored#i=120_t=1000_z=1e+06_x=0.243_y=0.8115.jpg)
+![web-colored#i=120_t=1000_z=20_x=0.2_y=0.8](./img/web-colored#i=120_t=1000_z=20_x=0.2_y=0.8.jpg)
+![web-colored#i=120_t=1000_z=20_x=0.25_y=0.8](./img/web-colored#i=120_t=1000_z=20_x=0.25_y=0.8.jpg)
+![web-colored#i=120_t=1000_z=100_x=0.245_y=0.81](./img/web-colored#i=120_t=1000_z=100_x=0.245_y=0.81.jpg)
+![web-colored#i=120_t=1000_z=1000_x=0.243_y=0.8111](./img/web-colored#i=120_t=1000_z=1000_x=0.243_y=0.8111.jpg)
+![web-colored#i=120_t=1000_z=10000_x=0.243_y=0.8113](./img/web-colored#i=120_t=1000_z=10000_x=0.243_y=0.8113.jpg)
+![web-colored#i=120_t=1000_z=10000_x=0.243_y=0.8114](./img/web-colored#i=120_t=1000_z=10000_x=0.243_y=0.8114.jpg)
+![web-colored#i=120_t=1000_z=10000_x=0.243_y=0.8115](./img/web-colored#i=120_t=1000_z=10000_x=0.243_y=0.8115.jpg)
+![web-colored#i=120_t=1000_z=100000_x=0.243_y=0.8115](./img/web-colored#i=120_t=1000_z=100000_x=0.243_y=0.8115.jpg)
+![web-colored#i=400_t=1000_z=2e+07_x=0.7_y=0.291](./img/web-colored#i=400_t=1000_z=2e+07_x=0.7_y=0.291.jpg)
+![web-colored#i=500_t=1000_z=2e+07_x=0.7_y=0.291](./img/web-colored#i=500_t=1000_z=2e+07_x=0.7_y=0.291.jpg)
+![web-colored#i=800_t=1000_z=2e+07_x=0.7_y=0.291](./img/web-colored#i=800_t=1000_z=2e+07_x=0.7_y=0.291.jpg)
+![colored#i=100_t=1000_z=1_x=0.5_y=-0.1313](./img/colored#i=100_t=1000_z=1_x=0.5_y=-0.1313.jpg)
+![colored#i=100_t=1000_z=100_x=0.7_y=0.29](./img/colored#i=100_t=1000_z=100_x=0.7_y=0.29.jpg)
+![colored#i=100_t=1000_z=100_x=0.7_y=-0.29](./img/colored#i=100_t=1000_z=100_x=0.7_y=-0.29.jpg)
+![colored#i=800_t=1000_z=2e+07_x=0.7_y=0.291](./img/colored#i=800_t=1000_z=2e+07_x=0.7_y=0.291.jpg)
+![colored#i=1000_t=1000_z=1000_h=200_x=0.7435_y=-0.1315](./img/colored#i=1000_t=1000_z=1000_h=200_x=0.7435_y=-0.1315.jpg)
+![colored](./img/colored.jpg)
+![mandelbrot](./img/mandelbrot.png)

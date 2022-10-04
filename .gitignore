@@ -22,3 +22,4 @@ go.work
 
 # builds
 build
+img/loop/*
