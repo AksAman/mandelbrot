@@ -51,7 +51,7 @@ Above code uses an unoptimized while operation. Aboev one must perform 5 multipl
 
 Following simplication can be done by simplifying the complex multiplication.
 
-- $ (iy+x)^2 = x^2 - y^2 + 2iyx $
+- $(iy+x)^2 = x^2 - y^2 + 2iyx$
 
 
 ```bash
