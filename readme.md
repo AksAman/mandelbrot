@@ -99,3 +99,5 @@ go run main.go \
     --workers 8 \
     --iter 1000
 ```
+![mandelbrot](./mandelbrot.png)
+
