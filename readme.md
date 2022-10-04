@@ -177,10 +177,13 @@ go build -o ./build/mandel ./cmd/cmd.go && ./build/mandel \
       <img src="./img/colored_i=1000_t=1000_z=1000_h=200_x=0.7435_y=-0.1315.jpg" width="200"/>
       <img src="./img/colored.jpg" width="200"/>
       <img src="./img/mandelbrot.png" width="200"/>
-      <video width="200" autoplay>
+      <video width="200" autoplay loop>
             <source src="./img/video.mp4" type="video/mp4">
       </video>
 </div>
+<video width="200" autoplay loop>
+            <source src="./img/video.mp4" type="video/mp4">
+      </video>
 
 
 ## References
