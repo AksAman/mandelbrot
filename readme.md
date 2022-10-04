@@ -67,3 +67,35 @@ for each pixel do
         y2 := y*y  # 1 mul
         ...
 ```
+
+
+### Usage
+```bash
+go run main.go --help
+  -height int
+        Height of the image (default 400)
+  -iter int
+        Max Iterations (default 1000)
+  -mode string
+        Mode of the image (default "seq") (options: seq, pixel, row, workers)
+  -out string
+        Name of the output file with extension (default "mandelbrot.png")
+  -scale int
+        Scale of the image
+  -threshold float
+        Threshold for the mandelbrot set (default 4)
+  -width int
+        Width of the image (default 700)
+  -workers int
+        Number of workers to use (default 4)
+```
+
+### Examples
+```bash
+go run main.go \
+    --mode pixel \
+    --scale 1 \
+    --threshold 32 \
+    --workers 8 \
+    --iter 1000
+```

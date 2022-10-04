@@ -21,7 +21,7 @@ const (
 	Sequential Mode = "seq"
 	Pixel      Mode = "pixel"
 	Row        Mode = "row"
-	Parallel   Mode = "parallel"
+	Parallel   Mode = "workers"
 )
 
 type Config struct {

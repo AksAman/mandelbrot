@@ -23,7 +23,7 @@ var (
 	threshold  = flag.Float64("threshold", mandelbrot.DefaultConfig.Threshold, "Threshold for the mandelbrot set")
 	workers    = flag.Int("workers", mandelbrot.DefaultConfig.Workers, "Number of workers to use")
 	scale      = flag.Int("scale", mandelbrot.DefaultConfig.Scale, "Scale of the image")
-	mode       = flag.String("mode", string(mandelbrot.DefaultConfig.Mode), "Mode of the image")
+	mode       = flag.String("mode", string(mandelbrot.DefaultConfig.Mode), "Mode of the image (options: seq, pixel, row, workers)")
 )
 
 func main() {
