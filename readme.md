@@ -156,7 +156,7 @@ go build -o ./build/mandel ./cmd/cmd.go && ./build/mandel \
 
 
 ### Gallery
-
+- Image filenames contain the parameters, hover oor open the images to see.
 <div style="display:flex; flex-wrap: wrap; gap:5px;">
       <img src="./img/web-colored_i=120_t=1000_z=1e+06_x=0.243_y=0.8115.jpg" width="200"/>
       <img src="./img/web-colored_i=120_t=1000_z=20_x=0.2_y=0.8.jpg" width="200"/>
