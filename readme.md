@@ -92,12 +92,13 @@ go run main.go --help
 
 ### Examples
 ```bash
-go run main.go \
+go build -o ./build/mandel ./main.go && ./build/mandel \
+    --out img/mandelbrot.png \
     --mode pixel \
     --scale 1 \
-    --threshold 32 \
+    --threshold 128 \
     --workers 8 \
     --iter 1000
 ```
-![mandelbrot](./mandelbrot.png)
+![mandelbrot](./img/mandelbrot.png)
 
