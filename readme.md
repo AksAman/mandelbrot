@@ -165,3 +165,10 @@ go build -o ./build/mandel ./main.go && ./build/mandel \
       <img src="./img/colored.jpg" width="200"/>
       <img src="./img/mandelbrot.png" width="200"/>
 </div>
+
+
+## References
+- [Plotting algorithms for the Mandelbrot set](https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set)
+- [campoy/mandelbrot](https://github.com/campoy/mandelbrot)
+- [Draw the Mandelbrot Set in Python](https://realpython.com/mandelbrot-set-python/)
+- [The Mandelbrot Set](https://complex-analysis.com/content/mandelbrot_set.html)
