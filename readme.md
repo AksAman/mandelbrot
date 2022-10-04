@@ -69,40 +69,53 @@ for each pixel do
 ```
 
 
-### Usage
+### Commandline Usage
 ```bash
-Flags: 
-  -height int
-        Height of the image (default 700)
-  -hue float
-        Hue offset of the image
-  -iter int
-        Max Iterations (default 1000)
-  -mode string
-        Mode of the image (options: seq, pixel, row, workers) (default "seq")
-  -offsetX float
-        Offset X of the image
-  -offsetY float
-        Offset Y of the image
-  -out string
-        Name of the output file with extension (default "mandelbrot.png")
-  -quality int
-        JPG Quality (default 100)
-  -scale int
-        Scale of the image (default 1)
-  -threshold float
-        Threshold for the mandelbrot set (default 4)
-  -width int
-        Width of the image (default 700)
-  -workers int
-        Number of workers to use (default 4)
-  -zoom float
-        Zoom of the image (default 1)
+go run cmd/cmd.go
+      Flags: 
+      -height int
+            Height of the image (default 700)
+      -hue float
+            Hue offset of the image
+      -iter int
+            Max Iterations (default 1000)
+      -mode string
+            Mode of the image (options: seq, pixel, row, workers) (default "seq")
+      -offsetX float
+            Offset X of the image
+      -offsetY float
+            Offset Y of the image
+      -out string
+            Name of the output file with extension (default "mandelbrot.png")
+      -quality int
+            JPG Quality (default 100)
+      -scale int
+            Scale of the image (default 1)
+      -threshold float
+            Threshold for the mandelbrot set (default 4)
+      -width int
+            Width of the image (default 700)
+      -workers int
+            Number of workers to use (default 4)
+      -zoom float
+            Zoom of the image (default 1)
+```
+
+### HTTP Usage
+```bash
+go run server/server.go --port 8080
+
+```
+
+- navigate to http://localhost:8080/mandelbrot with flags as queryparams
+- Example:
+      - http://localhost:8080/mandelbrot?width=700&height=700&iterations=120&mode=pixel&out=.jpg&scale=1&threshold=1000&zoom=1000000&offsetX=0.243&offsetY=0.8115&hue=120&save=true
+
 ```
 
 ### Examples
 ```bash
-go build -o ./build/mandel ./main.go && ./build/mandel \
+go build -o ./build/mandel ./cmd/cmd.go && ./build/mandel \
     --out img/mandelbrot.png \
     --mode pixel \
     --scale 1 \
